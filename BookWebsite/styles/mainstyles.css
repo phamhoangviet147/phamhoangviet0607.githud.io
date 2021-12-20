@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, p{
+    margin:  0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+   
+
+}
+.bg-blue{
+    background-color: #749fc2;
+    margin: 0;
+    padding: 20px 0;
+}
+.container h1{
+    text-align: center;
+    margin: 0;
+}
+.contact-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 5px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+}
+.contact-form{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+}
+.form-row input{
+    width: 100%;
+    
+}
+label{
+    font-size: 18px;
+    
+}
+input{
+    padding: 6px 5px;
+    outline: none;
+    font-size: 17px;
+}
+.input-w-full{
+    width: 100%;
+}
+textarea{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 5px;
+}
+.send-msg{
+    cursor: pointer;
+    background-color: rgb(255, 138, 83);
+    padding: 6px 10px;
+    border: none;
+    font-size: 17px;
+}
+
+.google-map h2{
+    margin: 0;
+}
+.frame{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.footer-info{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    
+}
+.icon{
+    font-size: 35px;
+    padding: 0 10px;
+    color: rgb(90, 179, 252);
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.social-networking p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.facebook{
+    margin-bottom: 10px;
+}
+.link-to-social{
+    cursor: pointer;
+}
+.icon-social{
+    margin-left: 10px;
+    font-size: 30px;
+    color:rgb(90, 179, 252);
+}
+.center{
+    text-align: center;
+}
+
+/* đăng ký thành viên */
+.bg-register{
+    background-image: url('../images/bgmember.jpg');
+    object-fit: cover;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.bg-register h1{
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+}
+.access-member-page{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: tomato;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+.access-member-page a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.form-register{
+    width: 700px;
+    padding: 20px;
+    background-color: rgb(122, 191, 255);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+.close-icon{
+    position: absolute;
+    left: 97%;
+    transform: translateX(-100%);
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.register-member-form h2{
+    margin: 5px 0;
+}
+.register-member-form label{
+    font-size: 17px;
+}
+.register-member-form input{
+    margin: 10px 0;
+}
+.submit-register{
+    background-color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    left: 75%;
+}
+
+.hidden-modal{
+    display: none;
+}
+.show-modal {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.hidden-modal{
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
